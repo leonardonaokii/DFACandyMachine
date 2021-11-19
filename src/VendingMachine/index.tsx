@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo } from "react";
 import { Container, CandyContainer, Display, Header, MoneyManipulation, VendingMachineContent, CandyContent, CandyEject } from "./styles";
-import { Alphabet, dfaOdd } from '../AFD';
+import { Alphabet, dfaOdd } from '../DFA';
 import React from 'react';
 import { ICandy } from '../Interfaces/ICandy';
 
