@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin: 12px auto;
+  margin: 32px auto;
   width: 600px;
   min-height: 800px;
 
@@ -163,7 +163,7 @@ export const Display = styled.div`
   justify-content: center;
 
   margin-top: 48px;
-  width: 45%;
+  width: 64%;
   border-radius: 8px;
   border: solid 1px #131313;
   padding: 4px 12px;
@@ -198,6 +198,11 @@ export const MoneyManipulation = styled.div`
     box-shadow: 0 0 2px 2px #131313;
 
     button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
       height: 48px;
       padding: 16px 32px;
       margin: 4px 0px;
