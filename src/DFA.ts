@@ -2,10 +2,10 @@ type State = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | -1;
 
 export type Alphabet = 1 | 2 | 5 | -6 | -7 | -8;
 
-function dfa(delta: (state: State, symbol: Alphabet) => State, state: State, finalStates: State[],): (word: Alphabet[]) => boolean {
+function dfa(delta: (state: State, symbol: Alphabet) => State, iState: State, finalStates: State[]): (word: Alphabet[]) => boolean {
   return word => {
     const deltaStar = star(delta);
-    return finalStates.includes(deltaStar(state, word));
+    return finalStates.includes(deltaStar(iState, word));
   }
 }
 
